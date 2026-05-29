@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y presupuestos | Impulsa Social</title>
+  <meta name="description" content="Solicita un presupuesto personalizado para servicios de marketing digital y campanas en redes sociales.">
+  <link rel="canonical" href="https://20monfort26-commits.github.io/Repo-Proyectos/contact.html">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Impulsa Social inicio"><span class="brand-mark">IS</span><span>Impulsa Social</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir navegacion"><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Principal">
+        <a href="services.html">Servicios</a>
+        <a href="social-media.html">Campanas</a>
+        <a href="testimonials.html">Testimonios</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="button button-primary">Solicitar presupuesto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero section">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow">Hablemos de tu crecimiento</p>
+          <h1>Solicita un presupuesto personalizado y recibe una propuesta clara.</h1>
+          <p class="lead">Completa el formulario para indicarnos tus objetivos, presupuesto y servicios de interes. Respondemos con una hoja de ruta inicial y una propuesta adaptada.</p>
+          <div class="card">
+            <ul class="check-list">
+              <li>Respuesta inicial en menos de 24 horas laborales</li>
+              <li>Propuesta con objetivos, canales y presupuesto recomendado</li>
+              <li>Opciones de pago seguro mediante Stripe Payment Links</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card visual-card">
+          <svg class="illustration" viewBox="0 0 560 420" aria-hidden="true">
+            <rect width="560" height="420" rx="32" fill="#f4f8ff"></rect>
+            <rect x="82" y="66" width="398" height="288" rx="26" fill="#ffffff" stroke="#d7e2f8"></rect>
+            <rect x="116" y="106" width="146" height="22" rx="11" fill="#4f7cff" opacity="0.16"></rect>
+            <rect x="116" y="150" width="330" height="18" rx="9" fill="#e8effb"></rect>
+            <rect x="116" y="186" width="330" height="18" rx="9" fill="#e8effb"></rect>
+            <rect x="116" y="222" width="330" height="18" rx="9" fill="#e8effb"></rect>
+            <circle cx="400" cy="280" r="40" fill="#14c9a3" opacity="0.2"></circle>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <article class="card form-card">
+          <h2>Pide tu presupuesto</h2>
+          <form id="quote-form" novalidate>
+            <div class="form-row">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Correo electronico</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row">
+              <label for="company">Empresa</label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+            </div>
+            <div class="form-row">
+              <label for="service">Servicio principal</label>
+              <select id="service" name="service" required>
+                <option value="">Selecciona una opcion</option>
+                <option value="seo">SEO</option>
+                <option value="sem">SEM</option>
+                <option value="community-management">Gestion de comunidades</option>
+                <option value="publicidad-pagada">Publicidad pagada</option>
+                <option value="contenido">Creacion de contenido</option>
+                <option value="analisis-datos">Analisis de datos</option>
+                <option value="campanas-redes">Campanas en redes sociales</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="budget">Presupuesto mensual estimado</label>
+              <select id="budget" name="budget" required>
+                <option value="">Selecciona un rango</option>
+                <option value="500-1000">500 - 1000 EUR</option>
+                <option value="1000-2500">1000 - 2500 EUR</option>
+                <option value="2500-5000">2500 - 5000 EUR</option>
+                <option value="5000+">Mas de 5000 EUR</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Objetivos y contexto</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-row checkbox-row">
+              <input id="consent" name="consent" type="checkbox" required>
+              <label for="consent">Acepto que mis datos se utilicen para responder a mi solicitud comercial.</label>
+            </div>
+            <input id="selected-plan" name="selectedPlan" type="hidden">
+            <button class="button button-primary" type="submit">Enviar solicitud</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </article>
+        <aside class="card">
+          <h2>Opciones de contacto</h2>
+          <p>Si prefieres una via directa, puedes escribirnos o reservar una llamada.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:hola@impulsasocial.es">hola@impulsasocial.es</a></li>
+            <li><strong>Telefono:</strong> <a href="tel:+34600000000">+34 600 000 000</a></li>
+            <li><strong>Horario:</strong> Lunes a viernes, 9:00 - 18:00</li>
+          </ul>
+          <div class="notice-box">
+            <h3>Integracion del formulario</h3>
+            <p>El formulario queda preparado para un endpoint HTTPS configurable en <code>assets/js/main.js</code>.</p>
+          </div>
+          <div class="notice-box">
+            <h3>Pagos seguros</h3>
+            <p>Los enlaces de pago se conectan a Stripe Payment Links. Si aun no estan configurados, redirigimos a una solicitud personalizada.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><span class="brand-mark">IS</span><span>Impulsa Social</span></a><p>Consultoria y ejecucion de marketing digital para crecimiento sostenible.</p></div>
+      <div><h3>Navegacion</h3><a href="services.html">Servicios</a><a href="social-media.html">Campanas</a><a href="testimonials.html">Testimonios</a><a href="faq.html">FAQ</a></div>
+      <div><h3>Contacto</h3><a href="contact.html">Solicitar presupuesto</a><a href="mailto:hola@impulsasocial.es">hola@impulsasocial.es</a><a href="tel:+34600000000">+34 600 000 000</a></div>
+    </div>
+    <div class="container footer-bottom"><p>&copy; 2026 Impulsa Social. Todos los derechos reservados.</p></div>
+  </footer>
+</body>
+</html>

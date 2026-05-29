@@ -18,6 +18,8 @@ Supervisar cambios globales y mantener coherencia entre negocio, contenido, UX, 
 - Evitar contradicciones entre paginas.
 - Validar que los cambios respeten el enfoque estatico del proyecto.
 - Coordinar actualizaciones de documentacion.
+- Exigir actualizacion de checkpoints cada vez que se edite al menos un archivo.
+- Verificar que `checkpoint/LATEST.md` refleje siempre el ultimo estado real del proyecto.
 
 ## Agentes especializados
 
@@ -134,6 +136,7 @@ Garantizar que la publicacion en GitHub Pages sea estable.
 - El agente SEO/accesibilidad revisa impacto transversal.
 - El agente de despliegue valida que la publicacion siga siendo viable.
 - El resultado final se documenta si afecta operativa, integracion o mantenimiento.
+- Ninguna sesion con cambios en archivos se considera cerrada sin actualizar el checkpoint vigente.
 
 ## Regla de prioridad
 

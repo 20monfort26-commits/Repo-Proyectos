@@ -55,6 +55,32 @@
 - Los textos deben reforzar confianza, medicion, conversion y crecimiento.
 - Cualquier cambio en precios, planes o servicios debe reflejarse tambien en la documentacion.
 - Las integraciones externas deben configurarse desde zonas identificables y faciles de mantener.
+- Cada vez que se edite cualquier archivo del proyecto, debe actualizarse al menos un checkpoint operativo en `checkpoint/`.
+- El punto de reanudacion oficial del proyecto es `checkpoint/LATEST.md`.
+- El historial resumido de continuidad debe mantenerse en `checkpoint/HISTORY.md`.
+- La documentacion de continuidad no debe depender del equipo actual, del correo actual ni del estado de una sesion local.
+
+## Politica de continuidad
+
+- Toda sesion con edicion de archivos debe dejar trazabilidad suficiente para retomarse desde otro ordenador o cuenta.
+- La informacion minima obligatoria a dejar actualizada es:
+  - objetivo de la ultima sesion
+  - archivos tocados
+  - estado actual del proyecto
+  - pendientes inmediatos
+  - riesgos o bloqueos
+  - comandos utiles para retomar
+- Si un cambio afecta arquitectura, integraciones, despliegue o reglas de trabajo, tambien debe actualizarse la documentacion estructural correspondiente.
+
+## Orden de lectura para reanudar
+
+Para continuar el proyecto con el minimo contexto, el orden recomendado es:
+
+1. `checkpoint/LATEST.md`
+2. `checkpoint/HISTORY.md`
+3. `system.md`
+4. `memory.md`
+5. `README.md`
 
 ## Punto central de configuracion
 

@@ -40,6 +40,9 @@ Este documento recoge los hechos estables y el contexto que deben preservarse en
 - El formulario usa fallback a `mailto:` si no existe endpoint externo.
 - Los botones de pago redirigen al formulario si no hay enlaces de Stripe configurados.
 - La web prioriza mensajes de conversion, confianza y resultados medibles.
+- Los checkpoints pasan a ser obligatorios tras cada sesion con edicion de archivos.
+- `checkpoint/LATEST.md` es la referencia principal para retomar trabajo.
+- `checkpoint/HISTORY.md` conserva el historial resumido de cambios y continuidad.
 
 ## Requisitos pendientes recurrentes
 
@@ -59,3 +62,4 @@ Este documento recoge los hechos estables y el contexto que deben preservarse en
 - Cualquier nueva pagina debe mantener la misma navegacion y estilo base.
 - Cualquier integracion nueva debe documentarse en `README.md` y, si afecta continuidad, tambien en `checkpoint/README.md`.
 - Si se modifica la oferta comercial, revisar home, servicios, FAQ y contacto en la misma sesion.
+- Si se modifica cualquier archivo, actualizar tambien `checkpoint/LATEST.md` y el historial asociado.

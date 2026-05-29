@@ -105,3 +105,28 @@ const SITE_CONFIG = {
 - Actualiza textos, precios y casos de exito cuando cambie la oferta comercial.
 - Sustituye los datos de ejemplo por los datos reales del negocio.
 - Mantiene activos el endpoint del formulario y los enlaces de pago para no romper conversiones.
+
+## Continuidad entre equipos y sesiones
+
+El proyecto incorpora un sistema de checkpoints pensado para poder continuar el trabajo desde otro ordenador, otra cuenta o una sesion nueva sin depender del contexto local anterior.
+
+### Archivos clave
+
+- `checkpoint/LATEST.md`: estado vigente y punto principal de reanudacion.
+- `checkpoint/HISTORY.md`: historial resumido de cambios y continuidad.
+- `checkpoint/README.md`: politica y reglas del sistema de checkpoints.
+
+### Regla operativa
+
+Cada vez que se edite al menos un archivo del proyecto, deben actualizarse los checkpoints. Como minimo:
+
+- `checkpoint/LATEST.md`
+- `checkpoint/HISTORY.md`
+
+### Orden recomendado de lectura para retomar
+
+1. `checkpoint/LATEST.md`
+2. `checkpoint/HISTORY.md`
+3. `system.md`
+4. `memory.md`
+5. `README.md`
